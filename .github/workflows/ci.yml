@@ -1,0 +1,13 @@
+name: 自动验收 (Auto Check)
+
+on: [push] # 只要有代码提交，就运行
+
+jobs:
+  docker-build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🔍 测试 Docker 构建 (Build Test)
+        run: docker-compose build
