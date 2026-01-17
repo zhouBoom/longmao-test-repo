@@ -1,22 +1,8 @@
 version: '3.8'
 
 services:
-  # ----------------------------
-  # [TODO] 候选人请在此处补充配置
-  # ----------------------------
-
-  # 示例结构 (请取消注释并修改):
-
-  # frontend:
-  #   build: ./frontend
-  #   ports:
-  #     - "3000:3000"
-
-  # backend:
-  #   build: ./backend
-  #   ports:
-  #     - "8000:8000"
-
-  # db:
-  #   image: postgres:15 (or mysql/redis)
-  #   ...
+  # 这是一个“占位”服务，用来证明环境是通的
+  # 正式考试时，候选人会把它改成 frontend 和 backend
+  test-service:
+    image: hello-world
+    # build: .  <-- 候选人需要写这行，指向他们的代码目录
